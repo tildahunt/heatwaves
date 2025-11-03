@@ -100,4 +100,4 @@ def load_models(exp):
 EXPERIMENTS = ["historical"]
 
 for exp in EXPERIMENTS:
-    model_trends = load_models(exp)
+    load_models(exp)
