@@ -16,3 +16,8 @@ Plot 2: Attribution of trends to single forcings
 
 Plot 3: Self Organising Maps
 - f
+
+Plot 4: Projection of all JJA days onto the heatwave circulation patterns
+- CanESM5 data train: flattens daily zg patterns for all JJA days so they can be compared to the SOM patterns (same method for other models and ERA5).
+- 
+- 
