@@ -24,12 +24,7 @@ Prepping the training data:
 Getting/ processing the SOMS:
 - SOM_size_choice: uses ERA5 training data and calculates distinctness and weighted mean pattern correlations to choose the 4x1 grid.
 - get_SOM: trains and saves the SOMs (and best_node time series) for ERA5 and the model data. Includes a bayesian optimisation to find training parameters and uses functions from SOM_functions.py for plotting.
-- SOM_processing_and_plot:
--   Uses the SOMs saved from get_SOMs for ERA5 and the model experiments.
--   Reorders the model SOMs to the ERA5 order using cost matrix.
--   Calculates 5-year running average Theil-Sen trends and Mann Kendall p-values, and ensemble and multi-model means.
--   Puts ensemble members with insufficent pattern correlation to their ERA5 counterpart to zero
--   Plots
+- SOM_processing_and_plot: Uses the SOMs saved from get_SOMs for ERA5 and the model experiments. Reorders the model SOMs to the ERA5 order using cost matrix. Calculates 5-year running average Theil-Sen trends and Mann Kendall p-values, and ensemble and multi-model means. Puts ensemble members with insufficent pattern correlation to their ERA5 counterpart to zero. Plots.
 
 Plot 4: Projection of all JJA days onto the heatwave circulation patterns
 - CanESM5 data train: flattens daily zg patterns for all JJA days so they can be compared to the SOM patterns (same method for other models and ERA5).
